@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Management Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>🎉 Event Management Portal</h1>
+
+<div class="stats">
+
+<div class="card">
+<h3>Total Events</h3>
+<p id="totalEvents">0</p>
+</div>
+
+<div class="card">
+<h3>Upcoming Events</h3>
+<p id="upcomingEvents">0</p>
+</div>
+
+</div>
+
+<div class="form-section">
+
+<input
+type="text"
+id="eventName"
+placeholder="Event Name">
+
+<input
+type="date"
+id="eventDate">
+
+<input
+type="text"
+id="eventLocation"
+placeholder="Location">
+
+<select id="eventCategory">
+<option value="Conference">Conference</option>
+<option value="Workshop">Workshop</option>
+<option value="Seminar">Seminar</option>
+<option value="Competition">Competition</option>
+</select>
+
+<button id="addBtn">
+Add Event
+</button>
+
+</div>
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search Events...">
+
+<div id="eventList"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
